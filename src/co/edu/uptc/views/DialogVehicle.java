@@ -2,12 +2,9 @@ package co.edu.uptc.views;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JColorChooser;
@@ -16,9 +13,8 @@ import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
-import javax.swing.plaf.ColorUIResource;
+
 
 public class DialogVehicle extends JDialog {
 
@@ -37,15 +33,7 @@ public class DialogVehicle extends JDialog {
     setLayout(new BorderLayout());
     initComponents();
 
-    addComponentListener(
-      new ComponentAdapter() {
-        @Override
-        public void componentResized(ComponentEvent e) {
-          Dimension newSize = getSize();
-          System.out.println(newSize.getWidth() + "  " + newSize.getHeight());
-        }
-      }
-    );
+   
   }
 
   private void initComponents() {

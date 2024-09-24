@@ -5,10 +5,9 @@ German Amezquita Becerra
 
 
 ## Description
+Este proyecto contiene un ejemplo del uso de layouts y componentes Swing.
 
-Este proyecto contiene un ejemplo del uso de Layout y componentes swing
-
-- Menu verticaldonde los item tiene compoenetes curvos
-- Sobre la Frame principal, se trabaja inicialmente con cambio de panales
-- El manejo de colores y personalizacion del componente JChooserColor
-- La personalizacion del componente JToggleButton
+- Menú vertical donde los ítems tienen componentes curvos.
+- En el marco principal, se trabaja inicialmente con el cambio de paneles.
+- Manejo de colores y personalización del componente JColorChooser.
+- Personalización del componente JToggleButton.

@@ -37,6 +37,9 @@ public class PanelMenu extends JPanel {
     addSeparator();
     addBtnMain();
     addBtnVihicleManager();
+    addBtnAction1();
+    addBtnAction2();
+    addBtnAction3();
     addBtnExit();
   }
 
@@ -50,6 +53,34 @@ public class PanelMenu extends JPanel {
   
     private void addBtnMain(){
       addButton("Principal").addActionListener(new ActionListener() {
+          @Override
+          public void actionPerformed(ActionEvent e) {
+              MainFrame.getInstance().activatePanel(PanelEnum.MAIN);
+          }
+          
+      });    
+    }
+
+    private void addBtnAction1(){
+      addButton("Accion 1").addActionListener(new ActionListener() {
+          @Override
+          public void actionPerformed(ActionEvent e) {
+              MainFrame.getInstance().activatePanel(PanelEnum.DEFAULT);
+          }
+          
+      });    
+    }
+    private void addBtnAction2(){
+      addButton("Accion 2").addActionListener(new ActionListener() {
+          @Override
+          public void actionPerformed(ActionEvent e) {
+              MainFrame.getInstance().activatePanel(PanelEnum.DEFAULT);
+          }
+          
+      });    
+    }
+    private void addBtnAction3(){
+      addButton("Accion 3").addActionListener(new ActionListener() {
           @Override
           public void actionPerformed(ActionEvent e) {
               MainFrame.getInstance().activatePanel(PanelEnum.DEFAULT);

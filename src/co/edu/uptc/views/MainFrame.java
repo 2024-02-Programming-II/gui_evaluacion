@@ -14,6 +14,7 @@ public class MainFrame extends JFrame {
   private PanelVehicleManager panelVehicleManager;
   private JPanel panelCenter;
   private PanelDefault panelDefault;
+  private PanelMain panelMain;
   private PanelStatus panelStatus;
 
   
@@ -60,7 +61,9 @@ public class MainFrame extends JFrame {
   
   private void createPanels(){
     panelDefault = new PanelDefault();   
+    panelMain = new PanelMain();
     panelVehicleManager = new PanelVehicleManager();     
+    panelCenter.add(panelMain,PanelEnum.MAIN.toString()); 
     panelCenter.add(panelDefault,PanelEnum.DEFAULT.toString()); 
     panelCenter.add(panelVehicleManager,PanelEnum.VEHICLE_MANAGER.toString());
     
@@ -69,7 +72,7 @@ public class MainFrame extends JFrame {
   public void activatePanel(PanelEnum panelEnum) {   
     CardLayout cardLayout = (CardLayout) panelCenter.getLayout();       
     cardLayout.show(panelCenter, panelEnum.name());
-    if (panelEnum==PanelEnum.DEFAULT){
+    if (panelEnum==PanelEnum.MAIN){
       MainFrame.getInstance().panelMenu.unselectedAll();
     }
 
