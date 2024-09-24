@@ -35,8 +35,9 @@ public class PanelMenu extends JPanel {
 
   private void createMenu() {
     addSeparator();
-    addBtnAction1();
-    addBtnAction2();
+    addBtnMain();
+    addBtnVihicleManager();
+    addBtnExit();
   }
 
   public void addSeparator(){
@@ -46,8 +47,18 @@ public class PanelMenu extends JPanel {
     add(panelSeparator);
   }
   
+  
+    private void addBtnMain(){
+      addButton("Principal").addActionListener(new ActionListener() {
+          @Override
+          public void actionPerformed(ActionEvent e) {
+              MainFrame.getInstance().activatePanel(PanelEnum.DEFAULT);
+          }
+          
+      });    
+    }
 
-  private void addBtnAction2(){
+  private void addBtnVihicleManager(){
     addButton("Administrar Vehiculos").addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -57,11 +68,11 @@ public class PanelMenu extends JPanel {
     });    
   }
 
-  private void addBtnAction1(){
-    addButton("Principal").addActionListener(new ActionListener() {
+  private void addBtnExit(){
+    addButton("Salir").addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
-            MainFrame.getInstance().activatePanel(PanelEnum.DEFAULT);
+            System.exit(0);
         }
         
     });    
