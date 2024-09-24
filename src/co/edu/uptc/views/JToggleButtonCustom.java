@@ -1,12 +1,9 @@
 package co.edu.uptc.views;
 
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.Graphics;
-import javax.swing.BorderFactory;
 import javax.swing.JToggleButton;
 import javax.swing.SwingConstants;
-import javax.swing.border.Border;
 import javax.swing.plaf.metal.MetalToggleButtonUI;
 
 public class JToggleButtonCustom extends JToggleButton {
@@ -14,7 +11,7 @@ public class JToggleButtonCustom extends JToggleButton {
   private static final int RADIUS = 35;
 
   private Color backgroundSelected = Color.RED;
-  public Color background = new Color(100, 0, 0);
+  public Color background = new Color(100, 100, 0);
 
   public JToggleButtonCustom() {
     setFocusPainted(false); 

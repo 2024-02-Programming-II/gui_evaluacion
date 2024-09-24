@@ -23,6 +23,7 @@ public class JColorChooserCustom extends JColorChooser{
           for (int i = 0; i < getComponentCount(); i++) {                       
             JComponent hh = (JComponent) getComponent(i);
             for (int j = 0; j < hh.getComponentCount(); j++) {
+              
               hh.getComponent(j).setBackground(
                   new ColorUIResource(ColorPalette.COLOR_BACKGROUND_INFO)
                 );

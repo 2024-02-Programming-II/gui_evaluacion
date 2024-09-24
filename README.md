@@ -4,6 +4,9 @@
 German Amezquita Becerra
 
 
+## prerequisites
+- Jdk 17
+
 ## Description
 Este proyecto contiene un ejemplo del uso de layouts y componentes Swing.
 
