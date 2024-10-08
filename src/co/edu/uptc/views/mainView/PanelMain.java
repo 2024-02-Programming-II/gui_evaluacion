@@ -1,10 +1,13 @@
-package co.edu.uptc.views;
+package co.edu.uptc.views.mainView;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
+import co.edu.uptc.views.palettes.ColorPalette;
+import co.edu.uptc.views.palettes.FontPalette;
 
 public class PanelMain extends JPanel {
 

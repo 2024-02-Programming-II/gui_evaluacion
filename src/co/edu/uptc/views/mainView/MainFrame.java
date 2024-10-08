@@ -1,4 +1,4 @@
-package co.edu.uptc.views;
+package co.edu.uptc.views.mainView;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
@@ -7,6 +7,7 @@ import java.awt.Dimension;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import co.edu.uptc.enums.PanelEnum;
+import co.edu.uptc.views.vehicleView.PanelVehicleManager;
 
 public class MainFrame extends JFrame {
 
@@ -24,6 +25,7 @@ public class MainFrame extends JFrame {
     getContentPane().setBackground(new Color(234, 216, 177));
     setDefaultCloseOperation(EXIT_ON_CLOSE);
     setMinimumSize(new Dimension(1000, 800));
+    setLocationRelativeTo(null);
     setLayout(new BorderLayout());
     initComponents();
     setVisible(true);

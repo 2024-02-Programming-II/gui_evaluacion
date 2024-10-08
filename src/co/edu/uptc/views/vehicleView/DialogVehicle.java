@@ -1,4 +1,4 @@
-package co.edu.uptc.views;
+package co.edu.uptc.views.vehicleView;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -14,6 +14,11 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
+import co.edu.uptc.views.componets.JColorChooserCustom;
+import co.edu.uptc.views.mainView.MainFrame;
+import co.edu.uptc.views.palettes.ColorPalette;
+import co.edu.uptc.views.palettes.FontPalette;
 
 
 public class DialogVehicle extends JDialog {

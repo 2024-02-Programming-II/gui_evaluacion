@@ -1,4 +1,4 @@
-package co.edu.uptc.views;
+package co.edu.uptc.views.vehicleView;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -16,6 +16,9 @@ import javax.swing.JTable;
 import javax.swing.table.TableColumn;
 
 import co.edu.uptc.enums.PanelEnum;
+import co.edu.uptc.views.mainView.MainFrame;
+import co.edu.uptc.views.palettes.ColorPalette;
+import co.edu.uptc.views.palettes.FontPalette;
 
 public class PanelVehicleManager extends JPanel {
 

@@ -1,4 +1,4 @@
-package co.edu.uptc.views;
+package co.edu.uptc.views.mainView;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -10,6 +10,8 @@ import javax.swing.ButtonGroup;
 import javax.swing.JPanel;
 
 import co.edu.uptc.enums.PanelEnum;
+import co.edu.uptc.views.componets.JToggleButtonCustom;
+import co.edu.uptc.views.palettes.ColorPalette;
 
 public class PanelMenu extends JPanel {
 

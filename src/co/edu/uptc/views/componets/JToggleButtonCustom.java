@@ -1,4 +1,4 @@
-package co.edu.uptc.views;
+package co.edu.uptc.views.componets;
 
 import java.awt.Color;
 import java.awt.Graphics;
